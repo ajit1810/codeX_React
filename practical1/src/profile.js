@@ -1,8 +1,8 @@
-import './profile.css';
+
 function Profile() {
     return (
         <div className="profile">
-            <h6>-codeX technologies satara</h6>
+            <h6 style={{backgroundColor : "blue" ,margin:"5px 70px"}}>-codeX technologies satara</h6>
         </div>
     );
 }

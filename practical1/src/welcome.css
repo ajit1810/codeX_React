@@ -1,40 +1,12 @@
-
 .main-box{
     height: 70vh;
+    width: 50%;
+    margin: 40px 150px ;    
     background-color: gray;
+    justify-content: center;
+
 }
 
-.container{
-    justify-content: center;
+.box{
     display: flex;
 }
-
-
-.box1{
-    height: 20vh;
-    width:100px;
-    margin: 8px;
-    align-content: center;
-    background-color: chartreuse;
-}
-
-.box1 h1{
-    font-size: 20px;
-    font-variant: small-caps;
-    color: black;
-}
-
-.box2{
-    height: 20vh;
-    width:100px;
-    margin: 8px;
-    align-content: center;
-    background-color: blue;
-}
-
-.box2 h1{
-    font-size: 20px;
-    color:tomato;
-    text-transform: capitalize;
-}
-

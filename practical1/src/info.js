@@ -5,8 +5,9 @@ function Info() {
         <div className="info">
             <p>
                mostly use for Frontend React.js  
+               <Profile/>
             </p>
-            <Profile/>
+           
         </div>
     );
 }

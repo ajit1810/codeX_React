@@ -1,19 +1,13 @@
 .info{
-    height: 42vh;
-    margin-left: 10px;
-    margin-right: 10px;
+    height: 30vh;
+    width: 90%;
+    background-color: rgb(200, 120, 120); 
+    margin-left: 20px; 
     align-content: center;
-    background-color: black;
-    color: coral;
+    text-align: center;
 }
 
-.info p{
-    height: 10vh;
-    margin-left: 10px;
-    margin-right: 10px;
-    align-content: center;
-    font-size: 8px;
+.info p {
+    font-size: 12px;
     font-weight: bold;
-    text-transform: uppercase;
-    background-color: blue;
 }
