@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar{
+    height: 50px;
+    margin-top: 10px; 
+    /* background-color: aqua; */
+    align-content: center;
+}
+
+.nav{
+   display: flex; 
+   justify-content: center;
+   font-size: large;
+   list-style: none;
+
+}
+
+.nav li{
+    margin:  50px;
+}
+
+.nav li:hover{
+    color: blue;
+    cursor: pointer;
+}
+
