@@ -1,0 +1,14 @@
+
+.Welcome{
+  text-align: center;
+  align-content: center;
+}
+
+.Welcome button{
+    margin-top: 20px;
+    height: 8vh;
+    width: 10%;
+    border-radius: 20px;
+    background-color: cornflowerblue;
+    font-size: larger;
+}
