@@ -1,0 +1,23 @@
+#services{
+    height: 110vh;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.services h1{
+    font-size: 35px;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.services-box{
+    width: 70%;
+    height: 95vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
