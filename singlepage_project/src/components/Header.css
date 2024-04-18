@@ -7,11 +7,19 @@
 }
 
 .navbar{
+    margin-top: 80px;
     width: 50%;
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     align-items: center;
+}
+
+.navbar img{
+    position: absolute;
+    width: 140px;
+    top: 3%;
+    left: 10%;
 }
 
 .navbar li{

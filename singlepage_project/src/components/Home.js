@@ -8,8 +8,14 @@ function Home() {
                 <div className="middle-div">
                     <h1>Cake Shop</h1>
                     <p>Baking With Heart</p>
-                    <button>Find Out</button>
-                    <button>Read</button>
+                    <div className="button-div">
+                        <a href="">
+                            <span></span>find out
+                        </a>
+                        <a href="">
+                            <span></span>Read
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
