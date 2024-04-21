@@ -4,8 +4,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+}
 
+html{
+    scroll-behavior: smooth;
 }
 
 #services{

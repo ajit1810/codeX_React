@@ -6,6 +6,11 @@
     justify-content: flex-end;
 }
 
+a{
+    text-decoration: none;
+}
+
+
 .navbar{
     margin-top: 80px;
     width: 50%;
