@@ -1,0 +1,33 @@
+
+.about h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+}
+
+.about p{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(159, 163, 167);
+}
+
+.desc{
+
+    /* background-color: aliceblue; */
+    height: 550px;
+    width: 630px;
+}
+
+.desc p{
+    font-size: 14px;
+    color: rgb(159, 163, 167);
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.about-info{
+    display: flex;
+    padding: 100px 140px;
+    gap: 50px;
+}

@@ -1,0 +1,103 @@
+
+.projects{
+    padding-top: 30px;
+    margin-bottom: 40px;  
+}
+
+.projects h1{
+    color: aliceblue;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.p1{
+    padding: 30px 30px;
+    margin: auto;
+    width: 80%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+   
+   
+}
+
+.p1 p{
+    height: 180px;
+    width: 600px;
+}
+
+.p1 img {
+    height: 180px;
+    width: 220px;
+}
+
+
+.p2{
+    padding: 30px 30px;
+    margin: auto;
+    width: 80%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+   
+   
+}
+
+.p2 p{
+    height: 180px;
+    width: 600px;
+}
+
+.p2 img {
+    height: 180px;
+    width: 220px;
+}
+
+
+.p3{
+    padding: 30px 30px;
+    margin: auto;
+    width: 80%;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-evenly;
+   
+   
+}
+
+.p3 p{
+    height: 180px;
+    width: 600px;
+}
+
+.p3 img {
+    height: 180px;
+    width: 220px;
+}
+
+
+.p4{
+    padding: 30px 30px;
+    margin: auto;
+    width: 80%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+   
+   
+}
+
+.p4 p{
+    height: 180px;
+    width: 600px;
+}
+
+.p4 img {
+    height: 180px;
+    width: 220px;
+}
+
+

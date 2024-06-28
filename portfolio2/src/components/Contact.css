@@ -1,0 +1,73 @@
+
+.contact h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+}
+
+.contact p{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(159, 163, 167);
+}
+
+
+.form-div {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.form-div input{
+    background-color: #1b1b1b;
+    border: none;
+    outline: none;
+    height: 70px;
+    width: 320px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: aliceblue;
+    /* font-size: larger; */
+}
+
+.form-div textarea{
+    background-color: #1b1b1b;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 140px;
+    width: 320px;
+    padding-left: 20px;
+    padding-top: 20px;
+    color: aliceblue;
+    /* font-size: larger; */
+}
+
+
+form #send-btn{
+    margin: 0px 680px;
+    margin-bottom: 100px;
+    color: rgb(177, 179, 181);
+    background-color : transparent ;
+    /* border: none; */
+    outline: none;
+    border: 0.1mm solid aliceblue;
+    border-radius: 5px;
+    transition-duration: 5.5ms ;
+    font-size: 17px;
+    /* transition:  background-color 0.25ms ease-in-out;  */
+    padding: 10px 20px;
+    transition:  background-color 0.25ms ease-in-out; /* Smooth transition for border color */
+    cursor: pointer;
+   
+}
+
+form #send-btn:hover{
+    color: #f96901;
+    /* border: none; */
+    background-color: #1b1b1b;
+}

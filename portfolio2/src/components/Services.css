@@ -1,0 +1,78 @@
+
+.services h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+}
+
+.services p{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(159, 163, 167);
+}
+
+.services-cards{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 100px 100px;
+}
+
+.services-cards .card{
+    height: 200px;
+    width: 300px;
+    background-color: #1b1b1b;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0px 30px;
+    padding-bottom: 10px;
+}
+
+.card #h5{
+    margin: 10px 0px;
+    color: #f96901;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: "Ubuntu Sans", sans-serif;
+}
+
+.card img{
+    height: 50px ;
+    width: 50px;
+}
+
+ i{
+    font-size: 45px;
+    color: rgb(62, 62, 209);
+    transform: rotate(360deg);
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation: spin;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.card #card{
+    color: aliceblue;
+}
+
+.card p{
+    font-size: 16px;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 2s ;
+}
+

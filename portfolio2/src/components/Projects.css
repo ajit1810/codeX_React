@@ -1,0 +1,41 @@
+.project h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+}
+
+
+.project .buttons{
+   
+    margin: 50px 0px;
+    margin-left: 520px;
+}
+
+.project .buttons button{
+    color: rgb(177, 179, 181);
+    background-color:#1b1b1b ;
+    border: none;
+    /* border: 1px solid aliceblue; */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition-duration: 1.5ms ;
+    font-size: 17px;
+    transition:  background-color 0.25ms ease-in-out; 
+    margin-right: 40px;  
+    width: 130px;  
+
+
+}
+
+.project .buttons button:hover{
+    cursor: pointer;
+    border: none;
+    background-color: #f96901;
+}
+
+
+.project-screenshots{
+    height: 500px ;
+    margin-bottom: 50px;
+    background-color: #1b1b1b;
+}

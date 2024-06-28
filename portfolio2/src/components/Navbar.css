@@ -1,0 +1,54 @@
+.nav .logo{
+    color: #f96901;
+    font-family: "Playwrite IS", cursive;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+.nav .navbar{
+    color: aliceblue;
+}
+
+.nav #btn{
+    color: aliceblue;
+    background: transparent;
+    border: 1px solid aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition-duration: 1.5ms ;
+    font-size: larger;
+}
+
+.nav #btn:hover{
+    cursor: pointer;
+    background-color: #f96901;
+}
+
+.nav{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul{
+    
+    display: flex;
+    list-style: none;
+    font-size: larger;
+    gap: 40px;
+}
+
+.navbar li{
+    border-radius: 5px;
+    padding: 7px 20px;
+    border: 0.3px solid transparent; /* Start with a transparent border */
+    transition:  border-color 2s ease-in-out; /* Smooth transition for border color */
+    transition:  background-color 0.25ms ease-in-out; /* Smooth transition for border color */
+}
+
+.navbar li:hover{
+    color: black;
+    background-color: rgb(169, 175, 180);
+}
+

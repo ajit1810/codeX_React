@@ -1,0 +1,94 @@
+
+
+
+
+.name h1{
+    font-size: 50px;
+    height: 150px;
+    width: 350px;
+    /* background-color: antiquewhite; */
+    align-content: center;   
+    color: white; 
+    letter-spacing: 5px;
+}
+
+.name h2{
+    font-size: 35px;
+    width: 800px;
+    /* background-color: antiquewhite; */
+    align-content: center;   
+    color: white; 
+    letter-spacing: 4px;
+}
+
+.name p{
+    margin-top: 10px;
+    /* background-color: antiquewhite; */
+    width: 500px;
+    color: white;
+    word-spacing: 4px;
+}
+
+.name{
+    margin-left:100px ;
+}
+
+.info{
+    margin-top: 150px;
+    align-items: center;
+    display: flex;
+    margin-right: 50px;
+    justify-content: space-evenly;
+}
+
+.photo{
+    height: 400px;
+    width: 400px;
+    background-color: antiquewhite;
+    border-radius: 100%;
+    margin-left: 200px ;
+}
+
+
+.icons{
+    /* background-color: antiquewhite; */
+    height: 60px;
+    width: 30%;
+    align-content: center;
+    margin: 40px 40%;
+   
+}
+
+.icons a{
+    display: inline-flex;
+    font-size: 30px;
+    margin-right:60px;
+    padding: 5px;
+    outline: 1px solid white;
+    border-radius: 50%;
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: 0.25s;
+}
+
+.icons a:hover{
+    outline-offset: 10px;
+}
+
+@keyframes ajit {
+   10%{
+    transform: rotate(20deg);
+   }
+   20%{
+    transform: rotate(-20deg);
+   }
+   30%{
+    transform: rotate(20deg);
+   }
+   40%{
+    transform: rotate(-20deg);
+   }
+}
+
+.icons a:hover{
+    animation: ajit 0.25s;
+}

@@ -1,0 +1,101 @@
+
+
+.footer{
+    text-align: center;
+    height: 60vh;
+    background-color:#1b1b1b ;
+}
+
+.footer h1{
+    padding: 20px 0px;
+    color: #f96901;
+    font-family: "Playwrite IS", cursive;
+    font-size: xx-large;
+    letter-spacing: 2px;
+}
+
+
+.footer-navbar ul{
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    font-size: larger;
+    gap: 40px;
+}
+
+.footer-navbar li{
+    color: aliceblue;
+    border-radius: 5px;
+    padding: 7px 20px;
+    border: 0.3px solid transparent; /* Start with a transparent border */
+    transition:  border-color 2s ease-in-out; /* Smooth transition for border color */
+    transition:  background-color 0.25ms ease-in-out; /* Smooth transition for border color */
+}
+
+.footer-navbar li:hover{
+    color: aqua;
+    
+}
+
+
+.footer-icons{
+    margin: 20px 0px;
+    padding-left: 40px;
+}
+
+.footer-icons a{
+    margin: 20px 0px;
+    display: inline-flex;
+    font-size: 30px;
+    margin-right:60px;
+    padding: 5px;
+    outline: 1px solid white;
+    color: aliceblue;
+    /* border-radius: 50%; */
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: 0.25s;
+}
+
+.footer-icons a:hover{
+    outline-offset: 10px;
+}
+
+@keyframes ajit {
+   10%{
+    transform: rotate(20deg);
+   }
+   20%{
+    transform: rotate(-20deg);
+   }
+   30%{
+    transform: rotate(20deg);
+   }
+   40%{
+    transform: rotate(-20deg);
+   }
+}
+
+.footer-icons a:hover{
+    animation: ajit 0.25s;
+}
+
+
+.email{
+    display: flex;
+    color:rgb(190, 191, 192); 
+    gap: 50px;
+    font-size: larger;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 35%;
+    border-bottom: 1px solid rgb(190, 191, 192);
+    margin-left: 500px;
+}
+
+
+#footer{
+    margin-top: 50px;
+    font-size: larger;
+    color: rgb(200, 201, 201);
+}
+

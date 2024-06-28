@@ -1,0 +1,143 @@
+.info h2{
+    color: rgb(159, 163, 167);
+    font-size: 40px;
+    font-family: "M PLUS 1p", sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.info #profession{
+    width: 650px;
+    margin-top: 10px;
+    font-size: 70px;
+    font-family: "EB Garamond", serif;
+    font-weight:bold;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.info #profession{
+    margin-top: 15px;
+    color: #f96901;
+}
+
+
+
+ #btn{
+    color: aliceblue;
+    background: transparent;
+    border: 1px solid aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition-duration: 1.5ms ;
+    font-size: larger;
+    transition:  background-color 0.25ms ease-in-out; 
+    margin-right: 50px;
+}
+
+ #btn:hover{
+    cursor: pointer;
+    border: none;
+    background-color: #f96901;
+}
+
+
+.icons{
+    margin: 30px 0px;
+   
+}
+
+.icons a{
+    display: inline-flex;
+    font-size: 30px;
+    margin-right:60px;
+    padding: 5px;
+    outline: 1px solid white;
+    color: aliceblue;
+    border-radius: 50%;
+    transition-property: outline-offset,outline-color,background-color;
+    transition-duration: 0.25s;
+}
+
+.icons a:hover{
+    outline-offset: 10px;
+}
+
+@keyframes ajit {
+   10%{
+    transform: rotate(20deg);
+   }
+   20%{
+    transform: rotate(-20deg);
+   }
+   30%{
+    transform: rotate(20deg);
+   }
+   40%{
+    transform: rotate(-20deg);
+   }
+}
+
+.icons a:hover{
+    animation: ajit 0.25s;
+}
+
+
+.work-info{
+    margin: 40px 0px;
+    background-color:#1b1b1b ;
+    border-radius: 10px;
+    display: flex;
+    height: 130px;
+    width: 550px;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+
+}
+
+.work-info #work-info{
+    color: #e67422;
+    font-size: larger;
+}
+
+.work-info h3{
+    margin-top: 5px;
+    color: rgb(182, 186, 189);
+}
+
+.work-info .div{
+    padding-right: 30px;
+    border-right: 2px solid gray;
+}
+
+
+.image{
+    height: 550px;
+    width: 550px;
+    background-color: #1b1b1b;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image img{
+    width: 400px;
+    left: 15%;
+    top: 4%;
+   position: absolute;
+}
+
+.header{
+    display: flex;
+    gap: 150px;
+    margin: 0px 90px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+

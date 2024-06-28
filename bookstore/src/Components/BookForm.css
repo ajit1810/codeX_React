@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* height: 100vh; */
+    width: 100%;
+    align-content: center;
+    background-color:black;
+}
+
+
+.bookForm{
+    display: flex;
+    /* height: 90vh; */
+    width: 90%;
+   
+    align-items: center;
+    margin: auto;
+    gap: 130px;
+}
+
+.banner img{
+    height: 500px;
+    /* width: 400px; */
+}
+
+.form{
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    align-content: space-around;
+}
+
+.form label{
+    font-size: x-large;
+    font-weight: 600;
+    
+   
+}
+
+.form input{
+    margin-bottom: 25px;
+    border: none;
+    outline: none;
+    height: 40px;
+    text-align: center;
+    border-bottom: 2px solid blue;
+    
+}
+
+#btn{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: aquamarine;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#btn:hover{
+    background-color: cadetblue;
+}
+
+h4{
+    margin-top: 20px;
+    color: aliceblue;
+    margin-left: 90px;
+}
+
+
+
