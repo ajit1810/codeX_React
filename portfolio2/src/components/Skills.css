@@ -1,0 +1,174 @@
+.my-skills{
+    width: 100%;
+    border-top: 2px solid black;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid black;
+}
+
+.my-skills h1{
+    padding: 40px 0px;
+    text-align: center;
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+
+article img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 3px;
+}
+
+#html{
+    font-size: 11px;
+}
+
+
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    text-align: center;
+}
+
+.technical-skills{
+   
+    padding-top: 20px;
+    padding-left:20px;
+    padding-right: 20px;
+    height: 170px;
+    width:470px;
+    border-radius: 20px;
+    background-color:#1b1b1b ;
+   
+}
+
+.technical-skills h2,.professional-skills h2{
+    color: #f96901;;
+}
+
+.technical-skills h3,.professional-skills h3{
+    color: white;;
+}
+
+
+article i {
+    font-size: 22px;
+    margin-right: 10px;
+    /* background-color: #f96901; */
+}
+
+article p{
+    color: rgb(159, 163, 167);
+}
+
+
+.professional-skills{
+   
+    padding-top: 20px;
+    padding-left:20px;
+    padding-right: 20px;
+    height: 170px;
+    width:470px;
+    border-radius: 20px;
+    background-color:#1b1b1b ;
+
+}
+
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: space-around;
+    padding: 20px 0px;
+}
+
+article{
+    display: flex;
+}
+
+article p{
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .my-skills {
+        margin-top: 650px; /* Reduced margin for smaller screens */
+        padding-bottom: 40px; /* Reduced padding for smaller screens */
+    }
+
+    .my-skills h1 {
+        text-align: start;
+        padding: 20px 20px; /* Reduced padding for smaller screens */
+        font-size: 1.5rem; /* Adjusted font size for better readability on small screens */
+    }
+
+    article img {
+        
+        height: 20px; /* Slightly smaller icons for mobile */
+        width: 20px;
+        margin-left: 30px;
+        margin-right: 8px; /* Adjusted margin for better spacing on mobile */
+        /* margin-bottom: 2px; */
+    }
+
+    #html {
+        font-size: 0.8rem; /* Adjusted font size for smaller screens */
+    }
+
+    .skills {
+        flex-direction: column; /* Stack skills vertically on mobile */
+        align-items: center;
+        gap: 20px; /* Reduced gap for smaller screens */
+    }
+
+    .technical-skills, .professional-skills {
+        padding: 10px; /* Reduced padding for smaller screens */
+        height: auto;
+        width: 80%; /* Full width on small screens */
+        max-width: 80%; /* Prevents the box from stretching too much */
+    }
+
+    .technical-skills h2, .professional-skills h2 {
+        font-size: 1.2rem; /* Adjusted font size for smaller screens */
+    }
+
+    .technical-skills h3, .professional-skills h3 {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+
+    article i {
+        font-size: 1.5rem; /* Adjusted icon size for smaller screens */
+        margin-right: 8px; /* Adjusted margin for better spacing on mobile */
+    }
+
+    article p {
+        font-size: 0.9rem; /* Adjusted font size for smaller screens */
+        margin-right: 8px; /* Adjusted margin for better spacing on mobile */
+    }
+
+    .article-container {
+        flex-direction: column; /* Stack articles vertically on mobile */
+        align-items: center;
+        gap: 1em; /* Reduced gap for smaller screens */
+    }
+
+    article {
+        flex-direction: column; /* Stack content in articles vertically on mobile */
+        text-align: center; /* Center align text on mobile */
+    }
+}

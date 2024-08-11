@@ -1,0 +1,29 @@
+.food-display{
+    margin-top: 30px ;
+   
+}
+
+.food-display h2{
+    font-size: max(2vw,24px);
+    font-weight: 600;
+}
+
+.food-display-list{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 30px;
+    /* justify-content: space-between; */
+}
+/* 
+@media (max-width:1050px) {
+    .food-display{
+        font-size: 14px;
+    }
+}
+@media (max-width:750px) {
+    .food-display{
+        font-size: 14px;
+    }
+    
+} */

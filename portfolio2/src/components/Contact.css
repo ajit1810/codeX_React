@@ -71,3 +71,32 @@ form #send-btn:hover{
     /* border: none; */
     background-color: #1b1b1b;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 10px; /* Adjust padding for small screens */
+    }
+
+    .contact h2, .contact p {
+        text-align: start; /* Ensure text alignment on small screens */
+    }
+
+    .form-div {
+        gap: 10px; /* Reduce gap between form elements */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-div input, .form-div textarea {
+        width: 80%; /* Full width for smaller screens */
+    }
+
+   form #send-btn{
+    margin: 10px 0; /* Adjust margin for smaller screens */
+    align-self: flex-start;
+   }
+
+
+}

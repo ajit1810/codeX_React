@@ -23,7 +23,8 @@
     gap: 40px;
 }
 
-.footer-navbar li{
+.footer-navbar a{
+    text-decoration: none;
     color: aliceblue;
     border-radius: 5px;
     padding: 7px 20px;
@@ -32,7 +33,7 @@
     transition:  background-color 0.25ms ease-in-out; /* Smooth transition for border color */
 }
 
-.footer-navbar li:hover{
+.footer-navbar a:hover{
     color: aqua;
     
 }
@@ -99,3 +100,55 @@
     color: rgb(200, 201, 201);
 }
 
+
+
+
+
+@media screen and (max-width: 768px) {
+    .footer {
+        height: auto; 
+        padding: 20px; /* Ensure padding is consistent */
+    }
+
+    .footer h1 {
+        font-size: large; /* Adjust font size for smaller screens */
+        text-align: center; /* Ensure heading text is aligned to the start */
+    }
+
+    .footer-navbar {
+        flex-direction: column; /* Stack navbar items vertically */
+        align-items: start; /* Align navbar items to the start */
+    }
+
+    .footer-navbar ul {
+        flex-direction: column; /* Stack list items vertically */
+        gap: 20px; /* Reduce gap for smaller screens */
+       
+        
+    }
+
+    .footer-navbar a {
+        padding: 10px 15px;
+        
+        
+    }
+
+    
+
+    .footer-icons a {
+        
+        margin: 10px 10px; 
+    
+    }
+
+    .email {
+        /* flex-direction: column; */
+        gap: 15px;
+        margin: auto;
+        font-size: medium;
+    }
+
+    #footer {
+        font-size: medium; 
+    }
+}

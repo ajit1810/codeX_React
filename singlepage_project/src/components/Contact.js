@@ -42,7 +42,7 @@ function Contact() {
         <i class="fab fa-twitter"></i>
         <i class="fab fa-instagram"></i>
         <i class="fab fa-youtube"></i>
-        <p>Copyright CodeGurucool</p>
+        <p>This website designed by Ajit Mane and contain ©2024</p>
       </div>
     </div>
   );

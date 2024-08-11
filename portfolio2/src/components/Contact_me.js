@@ -2,7 +2,7 @@ import './Contact.css';
 
 function Contact_me() {
     return (
-        <div className="contact">
+        <div className="contact" id='contact'>
              <h2>Contact Me</h2>
              <p>Cultivating Connections: Reach Out And Connect With Me</p>
 

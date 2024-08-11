@@ -10,7 +10,7 @@ import myImage from '../assets/myImage.png';
 
 function Header() {
   return (
-    <div className="header">
+    <div className="header" id="header">
       <div className="info">
         <h2>Hi I am</h2>
         <h2>Ajit Mane</h2>

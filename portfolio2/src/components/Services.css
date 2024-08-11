@@ -43,14 +43,12 @@
     width: 50px;
 }
 
+
+
  i{
-    font-size: 45px;
-    color: rgb(62, 62, 209);
-    transform: rotate(360deg);
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-    animation: spin;
+    font-size: 30px;
+    color: rgb(200, 200, 228);
+   
 }
 
 @keyframes spin {
@@ -76,3 +74,58 @@
     transition: 2s ;
 }
 
+
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+    .services-cards {
+        margin: 100px 20px; /* Reduce margin for smaller screens */
+    }
+
+    .services-cards .card {
+        width: 250px; /* Adjust card width for smaller screens */
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .services-cards {
+        margin: 70px 20px; /* Reduce margin for smaller screens */
+    }
+
+    .services-cards .card {
+        width: 230px; /* Adjust card width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .services h2 {
+        font-size: 30px; /* Adjust heading font size */
+        text-align: start;
+        margin-left: 10px;
+    }
+
+    .services p {
+        font-size: 18px; /* Adjust paragraph font size */
+        text-align: start;
+        margin-left: 10px;
+    }
+
+    .services-cards {
+        margin: 50px 10px; /* Further reduce margin for smaller screens */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-cards .card {
+        width: 100%; /* Make cards full width on smaller screens */        
+    }
+
+    .services-cards .card p{
+        text-align: center;
+    }
+
+    
+}

@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .navbar {
+        background-color: #343a40; /* Darker background for mobile view */
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem; /* Slightly smaller font size on mobile */
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+
+    @media (max-width: 508px) {
+        .navbar {
+            background-color: #343a40; /* Darker background for mobile view */
+        }
+    
+        .navbar-brand {
+            font-size: 1.25rem; /* Slightly smaller font size on mobile */
+        }
+    
+        .nav-link {
+            font-size: 1rem;
+        }
+    }
+}

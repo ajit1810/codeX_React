@@ -40,6 +40,7 @@
 }
 
 .navbar li{
+    
     border-radius: 5px;
     padding: 7px 20px;
     border: 0.3px solid transparent; /* Start with a transparent border */
@@ -50,5 +51,60 @@
 .navbar li:hover{
     color: black;
     background-color: rgb(169, 175, 180);
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: black;
+}
+
+
+
+
+/* Media queries for responsive design */
+
+@media screen and (max-width: 1024px) {
+    .nav .drawer-toggle {
+        display: block; /* Display toggle button for tablet screens and below */
+    }
+
+    .nav .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%; /* Adjust width as needed */
+        background-color: #333;
+        color: aliceblue;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .nav .navbar.open {
+        transform: translateX(0);
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding-top: 100px; /* Adjust padding for button space */
+    }
+
+    .navbar li {
+        margin-bottom: 10px; /* Adjust margin for list items */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav .drawer-toggle {
+        display: block; /* Display toggle button for mobile screens */
+    }
+
+    .nav .navbar {
+        width: 100%; /* Full width for mobile screens */
+    }
 }
 

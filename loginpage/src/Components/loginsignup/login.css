@@ -114,3 +114,91 @@ body{
     background: #eaeaea;
     color: #676767;
 }
+
+
+
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 36px;
+    }
+
+    .underline {
+        width: 40px;
+        height: 4px;
+    }
+
+    .input img {
+        margin: 0px 10px; /* Further reduced margin */
+        height: 20px; /* Smaller icon size */
+    }
+
+    .input input {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .forgot-password {
+        font-size: 14px;
+    }
+
+    .submit {
+        font-size: 14px;
+        height: 45px; /* Adjusted height */
+    }
+}
+
+@media (max-width: 576px) {
+
+    .body{
+        height: 100vh;
+    }
+    .container {
+        
+        
+        height: 500px;
+        width: 250px;
+        margin: 20px;
+        margin-top: 40px; 
+        /* margin-bottom: 40px; */
+    }
+
+    .text {
+        
+        font-size: 28px;
+    }
+
+    .underline {
+        width: 30px;
+        height: 3px;
+    }
+
+    .input{
+        margin-left: 40px;
+        width: 200px;
+    }
+
+    .input img {
+        margin: 0px 5px; /* Minimum margin for very small screens */
+        height: 18px; /* Smaller icon size */
+    }
+
+    .input input {
+        
+        font-size: 12px; /* Smaller font size */
+    }
+
+    .forgot-password {
+        font-size: 12px;
+    }
+
+    .submit {
+       
+        font-size: 12px;
+        height: 40px; /* Adjusted height */
+    }
+
+    .submit-container{
+        display: flex;
+        flex-direction: column;    
+    }
+}

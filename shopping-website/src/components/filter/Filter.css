@@ -1,0 +1,70 @@
+
+.filter{
+    background-color: rgb(243 244 246);
+    height: 180px;
+    margin: 30px 70px;
+    border-radius: 20px;
+    position: relative;
+    padding: 20px 30px;
+    box-shadow: 0px 4px 5px 0px gray ;
+
+}
+
+
+.filter .search-bar{
+    position:absolute;
+    height: 7vh;
+    width: 93%;
+    /* margin: 20px; */
+    background-color: white;
+    border-radius: 10px;
+    align-content: center;
+    padding: 0px 20px;
+    
+}
+
+.search-bar i{
+    color: rgb(39, 39, 39);
+}
+
+
+.search-bar input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: large;
+    margin-left: 20px;
+}
+
+.filter .reset-div{
+    display: flex;
+    position: absolute;
+    top: 35%;
+    gap:1180px;
+    font-size: large;
+    /* font-weight: bold; */
+    
+}
+
+.filter .reset-div button{
+    border: none;
+    background-color: transparent;
+    font-size: large;
+}
+
+
+.select-div{
+    position: absolute;
+    top: 65%;
+    
+}
+
+.select-div .select, option{
+    height: 5vh;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-right: 100px;
+    font-size: large;
+}

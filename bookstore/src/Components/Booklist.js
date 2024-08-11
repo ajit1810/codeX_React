@@ -1,34 +1,35 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+// import ImgMediaCard from './Card';
+// import './Booklist.css';
 
+// function Booklist() {
+//   const [books, setBooks] = useState([]);
 
-function Booklist(){
-    const [books,setBooks]=useState([]);
+//   useEffect(() => {
+//     axios
+//       .get("http://localhost:8080/getAllBook")
+//       .then((response) => {
+//         setBooks(response.data);
+//         console.log(response.data);
+//       })
+//       .catch((error) => {
+//         console.log(error);
+//       });
+//   }, []);
 
-    useEffect(()=>{
-        const fetchBooks =async()=>{
+ 
 
-            try {
-                const response = await axios.get('https://localhost:8080/getAllBook');
-                setBooks(response.data);
-            } catch (error) {
-                console.error('There was error fetching the books ',error);
-            }
-        }
-        fetchBooks();
-    },[]);
-    return (
-        <div>
-            <h1>Books List</h1>
-            <ul>
-                {books.map(book => (
-                    <li key={book.id}>
-                        {book.name} by {book.author}
-                    </li>
-                ))}
-            </ul>
-        </div>
-    );
-}
+//   return (
+//     <div>
+//       <h2>Book List</h2>
+//       <div className="cards" style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "40px" }}>
+//         {books.map((book) => (
+//           <ImgMediaCard key={book.id} book={book}  />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
 
-export default Booklist;
+// export default Booklist;

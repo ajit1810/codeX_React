@@ -1,3 +1,9 @@
+.project{
+    /* background-color: #bcb8b5; */
+    padding-bottom:50px ;
+}
+
+
 .project h2{
     text-align: center;
     color: aliceblue;
@@ -6,9 +12,11 @@
 
 
 .project .buttons{
-   
+    /* background-color: #f96901; */
     margin: 50px 0px;
-    margin-left: 520px;
+    height: 10vh;
+    align-content: center;
+    padding-left: 510px;
 }
 
 .project .buttons button{
@@ -21,7 +29,9 @@
     transition-duration: 1.5ms ;
     font-size: 17px;
     transition:  background-color 0.25ms ease-in-out; 
-    margin-right: 40px;  
+    margin-right: 20px;
+    margin-left: 20px;  
+    
     width: 130px;  
 
 
@@ -35,7 +45,72 @@
 
 
 .project-screenshots{
-    height: 500px ;
+    /* height: 500px ; */
     margin-bottom: 50px;
-    background-color: #1b1b1b;
+    display: flex;
+    text-align: center;
+    padding: 0px 150px;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    
+}
+
+.project-card{
+   
+    margin: auto;
+   
+}
+
+.project-card h4{
+    color: #f96901;
+    margin-bottom: 50px;
+}
+
+.project-card img{
+    height: 450px;
+    width: 250px;
+    border-radius: 20px;
+  
+   
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .project {
+        /* margin-top: 700px; */
+        padding-left: 10px; 
+    }
+
+    .project h2 {
+        text-align: start; 
+    }
+
+    .project .buttons {
+        padding-left: 0; 
+        flex-direction: column; 
+        gap: 10px; 
+        align-items: flex-start; 
+        margin-bottom: 100px;
+    }
+
+    .project .buttons button {
+        margin-bottom: 20px;
+        width: 80%; 
+    }
+
+    .project-screenshots {
+        padding: 0; 
+    }
+    .project-card{
+        margin: 20px;
+    }
+
+    .project-card img {
+        width: 80%; 
+        height: 70vh; 
+    }
 }
