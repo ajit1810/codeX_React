@@ -1,0 +1,30 @@
+.dashboard{
+    margin: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-div{
+    padding: 20px 120px;
+    /* width: 200px; */
+    box-shadow: inset 0px 0px 10px 2px gray;
+    border: 1px outset gray;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.dashboard-div:hover{
+    box-shadow: inset 0px 0px 10px 2px rgb(168 85 247);
+}
+
+.dashboard-div h2{
+    margin-top: 10px;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.dashboard-div p{
+    font-size: large;
+    font-weight: 500;
+    color: rgb(168 85 247);
+}

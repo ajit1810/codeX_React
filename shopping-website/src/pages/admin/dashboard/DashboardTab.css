@@ -1,0 +1,133 @@
+/* Container */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav-button {
+    font-size: 1.25rem;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav-button.active {
+    border-bottom: 2px solid #6d28d9;
+    color: #6d28d9;
+}
+
+/* Panel Content */
+.panel-content {
+    padding: 20px;
+}
+
+/* Panel Title */
+.panel-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+/* Add Button */
+.add-button-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.add-button {
+    display: flex;
+    align-items: center;
+    background-color: #ec4899;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #d946ef;
+}
+
+/* Table */
+.table-container {
+    overflow-x: auto;
+    
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-header {
+    background-color: #f4f4f4;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+
+.table-header th {
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+.table-row {
+    background-color: #fafafa;
+}
+
+.table-row:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-row td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.image {
+    width: 60px;
+    height: auto;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 1.25rem;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/* Optional: Hover effect for action buttons */
+.delete:hover {
+    background-color: red;
+}
+
+.edit:hover{
+    background-color: green;
+}
