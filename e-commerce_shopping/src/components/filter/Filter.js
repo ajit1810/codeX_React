@@ -2,9 +2,19 @@ import React, { useContext } from "react";
 import myContext from "../../context/data/MyContext";
 
 const Filter = () => {
+  const context = useContext(myContext);
+  const {
+    mode,
+    product,
+    searchKey,
+    setSearchKey,
+    filterType,
+    setFilterType,
+  } = context;
 
-    const context = useContext(myContext);
-    const{mode} = context;
+  
+  // Extract unique categories
+  const uniqueCategories = [...new Set(product.map(item => item.category))];
   return (
     <div>
       <div className=" container mx-auto px-4 mt-10  ">
@@ -29,6 +39,8 @@ const Filter = () => {
             <input
               type="text"
               name="searchkey"
+              value={searchKey}
+              onChange={(e) => setSearchKey(e.target.value)}
               id="searchkey"
               placeholder="Search here"
               className="px-8 py-3 w-full rounded-md bg-violet-0 border-transparent outline-0 text-sm"
@@ -41,6 +53,11 @@ const Filter = () => {
           <div className="flex items-center justify-between mt-4">
             <p className="font-medium">Filters</p>
             <button
+             onClick={() => {
+              setSearchKey('');
+              setFilterType('All');
+              // Optionally reset other filters if needed
+            }}
               className="px-4 py-2 bg-gray-50hover:bg-gray-200 text-gray-800 text-sm font-medium rounded-md"
               style={{ color: mode === "dark" ? "white" : "" }}
             >
@@ -49,30 +66,41 @@ const Filter = () => {
           </div>
           <div>
             <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-4">
+               {/* filter type */}
               <select
                 className="px-4 py-3 w-full rounded-md bg-gray-50 border-transparent outline-0 focus:border-gray-500 focus:bg-white focus:ring-0 text-sm"
                 style={{
                   backgroundColor: mode === "dark" ? "rgb(64 66 70)" : "",
                   color: mode === "dark" ? "white" : "",
                 }}
-              >
-                <option value="jacket">Jacket</option>
-                <option value="shirt">shirt</option>
-                <option value="mobile">mobile</option>
-                <option value="jacket">Jacket</option>
+                value={filterType}
+                onChange={(e)=>setFilterType(e.target.value)}
+              > 
+                <option value="All">All</option>
+                {uniqueCategories.map((category, index) => (
+                  <option key={index} value={category}>{category}</option>
+                ))}
+
               </select>
-              <select
+              {/* filter price  */}
+              {/* <select
                 className="px-4 py-3 w-full rounded-md bg-gray-50 border-transparent outline-0  focus:border-gray-500 focus:bg-white focus:ring-0 text-sm"
                 style={{
                   backgroundColor: mode === "dark" ? "rgb(64 66 70)" : "",
                   color: mode === "dark" ? "white" : "",
                 }}
+                value={filterPrice}
+                onChange={(e)=>setFilterPrice(e.target.value)}
               >
-                <option value="100">100</option>
-                <option value="200">200</option>
-                <option value="300">300</option>
-                <option value="400">400</option>
-              </select>
+                {
+                  product.map((item,index)=>{
+                    return(
+
+                      <option value={item.price}>{item.price}</option>
+                    );
+                  })
+                }
+              </select> */}
             </div>
           </div>
         </div>

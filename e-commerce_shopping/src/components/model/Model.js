@@ -1,7 +1,9 @@
 import { Dialog, Transition } from "@headlessui/react";
 import React, { Fragment, useState } from "react";
 
-const Model = () => {
+const Model = ({name, address, pincode, phoneNumber, setName, setAddress, setPincode, setPhoneNumber, buyNow}) => {
+    // console.log(name,address,pincode,phoneNumber)
+  
 
     let [isOpen, setIsOpen] = useState(false)
 
@@ -67,6 +69,8 @@ const Model = () => {
                               <input
                                 type="name"
                                 name="name"
+                                value={name}
+                                onChange={(e)=>setName(e.target.value)}
                                 id="name"
                                 className=" border outline-0 border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-100"
                                 required
@@ -82,6 +86,8 @@ const Model = () => {
                               <input
                                 type="text"
                                 name="address"
+                                value={address}
+                                onChange={(e)=>setAddress(e.target.value)}
                                 id="address"
                                 className=" border outline-0 border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-100"
                                 required
@@ -97,6 +103,8 @@ const Model = () => {
                               <input
                                 type="text"
                                 name="pincode"
+                                value={pincode}
+                                onChange={(e)=>setPincode(e.target.value)}
                                 id="pincode"
                                 className=" border outline-0 border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-100"
                                 required
@@ -112,6 +120,8 @@ const Model = () => {
                               <input
                                 type="text"
                                 name="mobileNumber"
+                                value={phoneNumber}
+                                onChange={(e)=>setPhoneNumber(e.target.value)}
                                 id="mobileNumber"
                                 className=" border outline-0 border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 bg-gray-100"
                                 required
@@ -119,7 +129,7 @@ const Model = () => {
                             </div>
                           </form>
                           <button
-                            onClick={closeModal}
+                            onClick={()=>{buyNow();closeModal()} }
                             type="button"
                             className="focus:outline-none w-full text-white bg-violet-600 bg-blue-600 hover:bg-violet-800  outline-0 font-medium rounded-lg text-sm px-5 py-2.5 "
                           >

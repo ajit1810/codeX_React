@@ -35,7 +35,14 @@ const Signup = () => {
         name: name,
         uid : users.user.uid,
         email : users.user.email,
-        time : Timestamp.now()
+        date : new Date().toLocaleString(
+          "en-US",
+          {
+            month : "short",
+            day : "2-digit",
+            year : "numeric",
+          }
+        )
       }
 
       //store user data in firestore database 
@@ -50,6 +57,7 @@ const Signup = () => {
       setLoading(false);
       
     } catch (error) {
+      toast.warn('user already exist ')
       console.log(error +": userCreation Error");
       setLoading(false);
       
