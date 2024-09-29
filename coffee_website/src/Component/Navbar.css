@@ -63,3 +63,26 @@
     
    cursor: pointer;
 }
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically */
+        height: auto; /* Allow height to adjust */
+    }
+    
+    .navbar ul {
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%; /* Make ul full width */
+    }
+
+    .navbar ul li {
+        text-align: center; /* Center align list items */
+        width: 100%; /* Make li full width */
+    }
+
+    .navbar ul li a {
+        padding: 10px 0; /* Adjust padding for vertical layout */
+    }
+}
