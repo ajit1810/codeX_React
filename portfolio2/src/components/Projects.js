@@ -4,9 +4,11 @@ import codeXapp from "../assets/projects/codex-3.jpg";
 import todolistapp from "../assets/projects/todo-1.jpg";
 import quizapp from "../assets/projects/quiz-3.jpg";
 import coffeewebsite from "../assets/projects/coffee_website.png";
-import loginpage from "../assets/projects/login.png";
 import cakewebsite from "../assets/projects/cakeshop.png";
+import shopapp from "../assets/projects/e-shopapp.png"
 import productManageWebsite from "../assets/projects/productManagement.png";
+import Book_Keeping_website from "../assets/projects/BookKeeping.png";
+
 
 import { useState } from "react";
 
@@ -52,29 +54,41 @@ function Projects() {
             <h4>TodoList App</h4>
           </div>
         )}
-        {(filter === "all" || filter === "website") && (
+        {/* {(filter === "all" || filter === "website") && (
           <div className="project-card">
             <img src={coffeewebsite} />
             <h4>Coffee_Website</h4>
           </div>
-        )}
+        )} */}
         {(filter === "all" || filter === "website") && (
-          <div className="project-card">
+          <a href="https://cakeshop-app.netlify.app">
+            <div className="project-card">
             <img src={cakewebsite} />
             <h4>CakeShop_Website</h4>
           </div>
+          </a>
         )}
         {(filter === "all" || filter === "website") && (
-          <div className="project-card">
-            <img src={loginpage} />
-            <h4>Sinup & Login Page</h4>
+          <a href="https://ecommerce-shopapp.netlify.app">
+            <div className="project-card">
+            <img src={shopapp} alt="not" />
+            <h4>ShopApp_Website</h4>
           </div>
+          </a>
         )}
         {(filter === "all" || filter === "website") && (
           <div className="project-card">
             <img src={productManageWebsite} />
             <h4>ProductManagement_website</h4>
           </div>
+        )}
+        {(filter === "all" || filter === "website") && (
+          <a href="https://books-keeping.netlify.app">
+            <div className="project-card">
+            <img src={Book_Keeping_website} />
+            <h4>Book_Keeping_website</h4>
+          </div>
+          </a>
         )}
       </div>
     </div>
